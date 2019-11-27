@@ -15,7 +15,5 @@ class FirstTestCase(unittest.TestCase):
         JobOffersPage.search_for_job(self)
         JobOffersPage.verify_returned_offers(self)
 
-
-
     def tearDown(self):
         driver.quit()
