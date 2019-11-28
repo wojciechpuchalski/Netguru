@@ -17,3 +17,7 @@ class JobOffersPage(object):
     def verify_returned_offers(self):
         offer_description = self.driver.find_element(*JobOffersLocators.offer_description).text
         assert ("UI" in offer_description)
+
+    def go_to_adobe_talent(self):
+        publish_job_offer = self.driver.find_element(*JobOffersLocators.publish_job_offers)
+        publish_job_offer.click()

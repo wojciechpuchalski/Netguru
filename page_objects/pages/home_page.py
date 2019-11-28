@@ -10,5 +10,3 @@ class HomePage(object):
     def go_to_job_offers(self):
         job_offers = self.driver.find_element(*HomePageLocators.job_offers_link)
         job_offers.click()
-
-
