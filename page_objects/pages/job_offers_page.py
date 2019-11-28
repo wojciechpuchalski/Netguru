@@ -3,7 +3,6 @@ from utilities.setup import driver
 from page_objects.locators.job_offers_locators import JobOffersLocators
 
 
-
 class JobOffersPage(object):
 
     def __init__(self):
@@ -11,6 +10,7 @@ class JobOffersPage(object):
 
     def search_for_job(self):
         search_input = self.driver.find_element(*JobOffersLocators.search_input)
+        search_input.is_displayed(), "search input is not attached to page"
         search_input.send_keys("UI/UX")
         search_input.send_keys(Keys.ENTER)
 
