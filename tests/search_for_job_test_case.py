@@ -15,6 +15,7 @@ class FirstTestCase(unittest.TestCase):
 
     def testScript(self):
         driver.get(self.base_url)
+        home_page.HomePage.accept_cookies(self)
         home_page.HomePage.go_to_job_offers(self)
         job_offers_page.JobOffersPage.search_for_job(self)
         job_offers_page.JobOffersPage.verify_returned_offers(self)
