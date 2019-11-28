@@ -1,5 +1,5 @@
 import unittest
-from page_objects.POM import HomePage, JobOffersPage
+from page_objects.pages import home_page, job_offers_page
 from utilities.setup import driver
 
 
@@ -11,9 +11,9 @@ class FirstTestCase(unittest.TestCase):
 
     def testScript(self):
         driver.get(self.base_url)
-        HomePage.go_to_job_offers(self)
-        JobOffersPage.search_for_job(self)
-        JobOffersPage.verify_returned_offers(self)
+        home_page.HomePage.go_to_job_offers(self)
+        job_offers_page.JobOffersPage.search_for_job(self)
+        job_offers_page.JobOffersPage.verify_returned_offers(self)
 
     def tearDown(self):
         driver.quit()
