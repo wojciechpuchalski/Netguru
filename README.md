@@ -16,14 +16,12 @@ So that I want to use it with my team
 ```
 SETUP AND RUN TESTS:
 
-Windows
+Windows:
 
+Install Python 3.6.X or higher and make sure its on Windows PATH
 1. Open command line
 2. First of al you should install pip install -r requirements.txt
 3. Get to the project directory
 4. Use command: venv\Scripts\activate to set virtual environment configuration
 5. Use command: python -m unittest tests\[test_name].py, where you specify test you want to run.
 It goes like that: python -m unittest tests\search_for_job_test_case.py
-
-Linux
-MacOS
