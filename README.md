@@ -18,12 +18,13 @@ SETUP:
 
 Windows
 
-First of al you should install pip install -r requirements.txt
 
-1. open command line
-2. Get to the project directory
-3. Use command: venv\Scripts\activate to set virtual environment configuration
-4. Use command: python -m unittest tests\[test_name].py, where you specify test you want to run.
+
+1. Open command line
+2. First of al you should install pip install -r requirements.txt
+3. Get to the project directory
+4. Use command: venv\Scripts\activate to set virtual environment configuration
+5. Use command: python -m unittest tests\[test_name].py, where you specify test you want to run.
 It goes like that: python -m unittest tests\search_for_job_test_case.py
 
 Linux
