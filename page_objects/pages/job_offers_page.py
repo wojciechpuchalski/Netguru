@@ -21,3 +21,4 @@ class JobOffersPage(object):
     def go_to_adobe_talent(self):
         publish_job_offer = self.driver.find_element(*JobOffersLocators.publish_job_offers)
         publish_job_offer.click()
+
