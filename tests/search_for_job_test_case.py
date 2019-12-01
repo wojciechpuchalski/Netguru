@@ -22,3 +22,7 @@ class FirstTestCase(unittest.TestCase):
 
     def tearDown(self):
         driver.quit()
+
+
+if __name__ == '__main__':
+    unittest.main()
