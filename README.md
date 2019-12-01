@@ -14,11 +14,9 @@ As a customer
 I want to select and buy my Creative Cloud plan
 So that I want to use it with my team
 ```
-SETUP:
+SETUP AND RUN TESTS:
 
 Windows
-
-
 
 1. Open command line
 2. First of al you should install pip install -r requirements.txt
@@ -29,5 +27,3 @@ It goes like that: python -m unittest tests\search_for_job_test_case.py
 
 Linux
 MacOS
-
-RUN TESTS:
